@@ -69,7 +69,7 @@
                     <span class="h-button__outer style-120-outer style-local-19-m15-outer d-inline-flex h-element">
                       <a h-use-smooth-scroll="true" href="<?php the_permalink(); ?>" data-colibri-id="19-m15" class="d-flex w-100 align-items-center h-button justify-content-lg-center justify-content-md-center justify-content-center style-120 style-local-19-m15 position-relative">
                         <span>
-                          <?php esc_html_e('read more','calliope'); ?>
+                          <?php esc_html_e('Saiba mais','calliope'); ?>
                         </span>
                         <span class="h-svg-icon h-button__icon style-120-icon style-local-19-m15-icon">
                           <!--Icon by Icons8 Line Awesome (https://icons8.com/line-awesome)-->
