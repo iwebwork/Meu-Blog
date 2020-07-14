@@ -417,10 +417,8 @@ function colibriwp_post_comments_template( $form = '' ) {
 function colibriwp_theme_print_footer_copyright() {
     ?>
     <div class="h-global-transition-all">
+        Todos os direitos reservados -
         &copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'blogname' ); ?>.
-        <?php printf( __( 'Built using WordPress and %s', 'colibri-wp' ),
-            '<a target="_blank" href="https://colibriwp.com/">ColibriWP Theme</a>'
-        ); ?> .
     </div>
     <?php
 }
