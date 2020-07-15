@@ -23,13 +23,13 @@
 define( 'DB_NAME', 'meublog' );
 
 /** Usuário do banco de dados MySQL */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'iwebwork' );
 
 /** Senha do banco de dados MySQL */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', '06101218iwebwork' );
 
 /** Nome do host do MySQL */
-define( 'DB_HOST', '127.0.0.1' );
+define( 'DB_HOST', 'mysql873.umbler.com:41890' );
 
 /** Charset do banco de dados a ser usado na criação das tabelas. */
 define( 'DB_CHARSET', 'utf8mb4' );
