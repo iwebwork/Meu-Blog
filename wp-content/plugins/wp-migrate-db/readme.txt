@@ -2,10 +2,10 @@
 Contributors: bradt, deliciousbrains
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5VPMGLLK94XJC
 Tags: Export WordPress, Migrate WordPress, WordPress database plugin, WordPress migration plugin, WP Migrate DB
-Requires at least: 3.6
-Tested up to: 5.4
-Requires PHP: 5.4
-Stable tag: 1.0.13
+Requires at least: 5.2
+Tested up to: 5.8
+Requires PHP: 5.6
+Stable tag: 2.1.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,7 +15,7 @@ Make WordPress migration easy. Migrate your database at the click of a button wi
 
 WP Migrate DB takes the hassle out of moving your WordPress site.
 
-https://www.youtube.com/watch?v=8u_kX5d78Bs
+https://deliciousbrains.wistia.com/medias/vahu041lkd
 
 WP Migrate DB is a WordPress migration plugin that makes exporting and migrating your database easy, fast, and straightforward.
 
@@ -69,7 +69,7 @@ And that's just the tip of the iceberg, we're always working on adding value to 
 
 Find out about the [incredible value that WP Migrate DB Pro brings on our website](https://deliciousbrains.com/wp-migrate-db-pro/upgrade/?utm_campaign=WP%2BMigrate%2BDB%2BPro%2BUpgrade&utm_source=wordpress.org&utm_medium=free%2Bplugin%2Blisting), or watch the video below.
 
-https://www.youtube.com/watch?v=8u_kX5d78Bs
+https://deliciousbrains.wistia.com/medias/5co63n4jqq
 
 == Frequently Asked Questions  ==
 
@@ -156,7 +156,7 @@ You can! While cloning a WordPress site can be difficult, WP Migrate DB makes it
 **Step 3:** Export the database.
 **Step 4:** Import the database into your new site.
 
-And it's as simple as that, your data has been cloned onto the new site, ready to go. Pssstâ€¦ If you have [WP Migrate DB Pro](https://deliciousbrains.com/wp-migrate-db-pro/upgrade/?utm_campaign=WP%2BMigrate%2BDB%2BPro%2BUpgrade&utm_source=wordpress.org&utm_medium=free%2Bplugin%2Blisting), it's even easier to clone your entire website, including all your media, themes, and plugins.
+And it's as simple as that, your data has been cloned onto the new site, ready to go. Pssst¦ If you have [WP Migrate DB Pro](https://deliciousbrains.com/wp-migrate-db-pro/upgrade/?utm_campaign=WP%2BMigrate%2BDB%2BPro%2BUpgrade&utm_source=wordpress.org&utm_medium=free%2Bplugin%2Blisting), it's even easier to clone your entire website, including all your media, themes, and plugins.
 
 = Is FTP a thing of the past? =
 
@@ -178,7 +178,6 @@ Limited free support is provided, and we offer dedicated priority email support 
 
 Find out all relevant [pricing information over on our official site](https://deliciousbrains.com/wp-migrate-db-pro/pricing/?utm_campaign=WP%2BMigrate%2BDB%2BPro&utm_source=wordpress.org&utm_medium=free%2Bplugin%2Blisting).
 
-
 == Screenshots ==
 
 1. Main screen
@@ -186,6 +185,56 @@ Find out all relevant [pricing information over on our official site](https://de
 3. Saving the exported database
 
 == Changelog ==
+
+= WP Migrate DB 2.1.2 - 2021-08-30 =
+* Improvement - Accessibility: Better support for `Skip to main content` keyboard navigation.
+
+= WP Migrate DB 2.1.1 - 2021-08-18 =
+* Improvement: Migrations can now be run on sites that use the default permalink structure
+* Bug fix: PHP fatal error when running find and replace on a serialized unclonable object
+* Bug fix: PHP notices during an existing find and replace related to the addition of regex support
+
+= WP Migrate DB 2.1 - 2021-08-04 =
+* New: Case-sensitive custom find and replace
+* Improvement: Show a notice when the REST API is disabled or inaccessible
+
+= WP Migrate DB 2.0.2 - 2021-06-17 =
+* Improvement: "Search & Replace" updated to "Find & Replace" for consistency
+* Bug fix: Some PHP files can be directly accessed in a browser
+* Bug fix: Rewrite rules lost after migration
+
+= WP Migrate DB 2.0.1 - 2021-05-06 =
+* Bug fix: Replacing a string with nothing not supported
+* Bug fix: Plugin not working on sites with a custom REST API URL
+* Bug fix: Plugin not working on sites with a custom plugin directory
+* Bug fix: 'gmdateI18n' function not available on older versions of WordPress
+* Bug fix: Javascript file with tilde in filename blocked by some firewalls
+
+= WP Migrate DB 2.0 - 2021-04-28 =
+* New: Brand new user interface powered by React. [Read the release post](https://deliciousbrains.com/wp-migrate-db-pro-2-0-released/?utm_campaign=changelogs&utm_source=wordpress.org&utm_medium=free%2Bplugin%2Blisting&utm_content=MDB20)
+* New: Automatically save the last 10 migrations
+* New: Ability to rename profiles from the profiles tab
+* New: Added 'wpmdb_replace_json_encode_flags' filter for modifying how data is JSON-encoded during a search/replace
+
+= WP Migrate DB 1.0.17 - 2021-02-03  =
+
+* Bug fix: Deprecated PHP code causes warnings in PHP 8+
+* Bug fix: Regex to match recursive serialized records matches non-serialized data
+* Bug fix: Invert selection UI option doesn't work on newer versions of WordPress
+* Improvement: Fix several styling issues
+* Improvement: Replace ANSI quotes with backticks for better MySQL compatibility
+
+= WP Migrate DB 1.0.16 - 2020-09-14  =
+
+* Bug fix: Find & Replace migrations do not replace data that is JSON encoded
+* Bug fix: The `Filesystem::chmod()` method does not function correctly and silently logs an error
+* Bug fix: Running a migration without find and replace values throws a PHP warning
+
+= WP Migrate DB 1.0.15 - 2020-07-30  =
+* Bug fix: Check boxes are not saved correctly in plugin settings
+
+= WP Migrate DB 1.0.14 - 2020-07-28  =
+* Bug fix: Invalid $_POST values are returned in plain text which is a cross site scripting (XSS) risk
 
 = WP Migrate DB 1.0.13 - 2020-03-17  =
 * Bug fix: Usage of `get_magic_quotes_gpc()` triggers a warning on PHP 7.4+
